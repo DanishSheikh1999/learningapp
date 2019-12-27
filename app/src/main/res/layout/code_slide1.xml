@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Basic Structure"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="cursive"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/advent_pro"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="The basic structure of Arduino programming is simple and is composed of two parts:\n\Setup\n\Loop"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heading"/>
+        <com.github.chen0040.androidcodeview.SourceCodeView
+            android:id="@+id/basic"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@id/text1"
+            />
+
+<!--        <br.tiagohm.codeview.CodeView-->
+<!--            android:id="@+id/basic"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            app:cv_font_size="14"-->
+<!--            app:cv_highlight_line_number="36"-->
+<!--            app:cv_show_line_number="true"-->
+<!--            app:cv_start_line_number="0"-->
+<!--            app:cv_wrap_line="true"-->
+<!--            app:cv_zoom_enable="true"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            android:padding="10dp"-->
+
+<!--            app:layout_constraintTop_toBottomOf="@id/text1">-->
+<!--        </br.tiagohm.codeview.CodeView>-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/basic"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:padding="10dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:src="@drawable/rasp4"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/text1"/>-->
+
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/advent_pro"
+            android:text="The code you write for your micro-controller are known as sketches.\n\nEvery sketch needs two void type functions, setup() and loop().\n\nThe setup() method is run only once when the micro-controller is powered up which means the instructions written in setup() are run only once.\n\nThe loop() method runs after setup() has been executed. The loop() runs infinitely untill the micro-controller is powered off. This means that the instruction set of loop() method runs over and over again."
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@id/basic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

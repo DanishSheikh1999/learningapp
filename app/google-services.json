@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1038103048438",
+    "firebase_url": "https://silk-iot.firebaseio.com",
+    "project_id": "silk-iot",
+    "storage_bucket": "silk-iot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038103048438:android:39a6ebf05b08caddd8bcd7",
+        "android_client_info": {
+          "package_name": "com.android.learningapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1038103048438-kkqprdsjp50p5p0aus8hu1ckmmd050a3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.learningapp",
+            "certificate_hash": "30e65bcb315436f7ff45fea4637966c2fd2f0838"
+          }
+        },
+        {
+          "client_id": "1038103048438-t0o76ca9lccon0easippip39fhp39lkq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFaRCan5ziGytG2pnJJ6CtEXFrbg9A3bA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1038103048438-t0o76ca9lccon0easippip39fhp39lkq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

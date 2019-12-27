@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Silk</string>
+    <string name="tab_text_1">Home</string>
+    <string name="tab_text_2">Tasks</string>
+    <string name="tab_text_3">Social</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="microcontrollers_desc">A microcontroller can be considered a self-contained system with a processor, memory and peripherals and can be used as an embedded system.</string>
+    <string name="micro_desc_2">Click here to know more about different microcontrollers</string>
+    <string name="coding_desc">Click here to learn more about how to code for different sensors and boards.</string>
+    <string name="coding_arduino_lang">Arduino Programming Language is very much similar to the C language. Arduino programming language can be divided in three main parts: functions, values (variables and constants), and structure.</string>
+    <string name="functions">Arduino IDE already has many inbuilt functions to ease your work. Additionally you can always add libraries to your arduino ide and use their functions. Functions are used for controlling the Arduino board and performing computations. These can be categorized as the following -\n1. Digital I/O\n2.Analog I/O\n3.Characters\n4.Advanced I/O\n5.Zero, Due and MKR Family\n6.Random Numbers\n7.Time\n8.Bits and Bytes\n9.External Interrupts\n10.Interrupts\n11.Math\n12.Communications\n13.Trigonometry\n14.USB</string>
+    <string name="variables">Arduino contains many variable types and constants.\nFollowing are the different types of variables and constants available in arduino ide - \n1.Data Types\n2.Constants\n3.Conversion\n4.Variable Scope and Qualifiers\n5.Utilities</string>
+    <string name="microcontroller_basics">A microcontroller is a compact integrated circuit designed to govern a specific operation in an embedded system. A typical microcontroller includes a processor, memory and input/output (I/O) peripherals on a single chip.</string>
+    <string name="sensor_of_the_week">The sensor of this week is LED. Hope you all are familiar with LED, if not then its never too late to learn. Team arv will be looking forward to see your innovation with the LED.</string>
+    <string name="facebook_app_id">459572428245179</string>
+    <string name="structure_coding">The elements of Arduino (C++) code. Following are the different structures provided by the Arduino Programming Language-\n1.Sketch\n2.Control Structure\n3.Operators\n4.Further Syntax</string>
+    <string name="sensors_description"> Sensor is a device, module, or subsystem whose purpose is to detect changes in its environment and send the information to other electronics.</string>
+    <string name="sensor_intro_deep">An electronic sensor is a device designed to indicate or measure something about the environment in which it is operating. This information is created mechanically or electrically and transmitted to the microcontroller.</string>
+    <string name="content_description_of_code">Syntax of the particular function</string>
+</resources>
