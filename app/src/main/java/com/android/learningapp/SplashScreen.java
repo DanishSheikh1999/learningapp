@@ -24,10 +24,11 @@ public class SplashScreen extends AppCompatActivity {
             public void run() {
                 if (account == null) {
                     startActivity(new Intent(SplashScreen.this, LoginActivity.class));
+                    finish();
                 } else {
                     startActivity(new Intent(SplashScreen.this, TabbedActivity.class));
+                    finish();
                 }
-                finish();
             }
         }, 3000);
     }

@@ -74,7 +74,23 @@ public class ProfilePage extends AppCompatActivity implements View.OnClickListen
         googleSignInAccount = GoogleSignIn.getLastSignedInAccount(this);
         UID = googleSignInAccount.getId();
         localValues = getSharedPreferences("Profile Details", MODE_PRIVATE);
-        initialize();
+        fullName = findViewById(R.id.fullname);
+        userName = findViewById(R.id.username);
+        Description = findViewById(R.id.descrtext);
+        back = findViewById(R.id.back_button);
+        fbStatus = findViewById(R.id.message);
+        callbackManager = CallbackManager.Factory.create();
+        edit = (ImageButton) findViewById(R.id.edit_fields);
+        more = (ImageButton) findViewById(R.id.more_details);
+        facebook = findViewById(R.id.facebook);
+        fbLogin = findViewById(R.id.facebookLogin);
+        Email = findViewById(R.id.email_id);
+        Phone = findViewById(R.id.phone_num);
+        detailsExtra = findViewById(R.id.extra_details);
+        profileImage = findViewById(R.id.profile_image);
+        fullName.setText(googleSignInAccount.getDisplayName());
+        Email.setText(googleSignInAccount.getEmail());
+        Phone.setText(googleSignInAccount.getId());
         Log.d("DEBUG", "About to call the checkDescription()");
         Description.setText(localValues.getString("Description", "Nothing is true, everything is permitted."));
         checkDescription();
@@ -116,26 +132,6 @@ public class ProfilePage extends AppCompatActivity implements View.OnClickListen
                 Log.d("Facebook Deb", error.toString());
             }
         });
-    }
-
-    private void initialize() {
-        fullName = findViewById(R.id.fullname);
-        userName = findViewById(R.id.username);
-        Description = findViewById(R.id.descrtext);
-        back = findViewById(R.id.back_button);
-        fbStatus = findViewById(R.id.message);
-        callbackManager = CallbackManager.Factory.create();
-        edit = (ImageButton) findViewById(R.id.edit_fields);
-        more = (ImageButton) findViewById(R.id.more_details);
-        facebook = findViewById(R.id.facebook);
-        fbLogin = findViewById(R.id.facebookLogin);
-        Email = findViewById(R.id.email_id);
-        Phone = findViewById(R.id.phone_num);
-        detailsExtra = findViewById(R.id.extra_details);
-        profileImage = findViewById(R.id.profile_image);
-        fullName.setText(googleSignInAccount.getDisplayName());
-        Email.setText(googleSignInAccount.getEmail());
-        Phone.setText(googleSignInAccount.getId());
     }
 
     public boolean isLoggedIn() {
